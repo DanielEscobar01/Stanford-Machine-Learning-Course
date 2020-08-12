@@ -7,8 +7,9 @@ function [X_norm, mu, sigma] = featureNormalize(X) % FEATURENORMALIZE Normalizes
 	mu = zeros(1, size(X, 2));
 	sigma = zeros(1, size(X, 2));
    
-
+	% Compute the mean of each column in X and put the value in mu vector
 	mu= mean(X);
+	% Compute the std of each column in X and put the value in sigma vector
 	sigma=std(X);
 
 	% Use i for columns and j for rows
