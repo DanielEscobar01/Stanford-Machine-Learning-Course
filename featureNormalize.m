@@ -18,5 +18,5 @@ function [X_norm, mu, sigma] = featureNormalize(X) % FEATURENORMALIZE Normalizes
 		X_norm(j,i)=(X(j,i)-mu(1,i))/sigma(1,i); %This will set up the normalized values in the new matrix
 		end;
 	end;		 
-
+ 
 end
